@@ -1,65 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>SIM Arquitectura</title>
-    <meta name='keywords' content='arquitectura,estudio,edificios,casas,construccion'>
-    <meta name='author' content='Aguirre Ivan Gonzalo'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>SIM Arquitectura</title>
+        <meta name='keywords' content='arquitectura,estudio,edificios,casas,construccion'>
+        <meta name='author' content='Aguirre Ivan Gonzalo'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="pages/obras.html">OBRAS</a>
-                </li>
-                <li>
-                    <a href="pages/servicios.html">SERVICIOS</a>
-                </li>
-                <li>
-                    <a href="pages/sobre_nosotros.html">SOBRE NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="pages/contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/img/SIM-logo.png" alt="SIM Arquitectura logo">
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="pages/obras.html">OBRAS</a></li>
+                    <li><a href="pages/servicios.html">SERVICIOS</a></li>
+                    <li><a href="pages/sobre_nosotros.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="pages/contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <article>
-        <section>
-            <article>
-                <h1>SIM Arquitectura</h1>
-                <img src="assets/img/portada.jpg">
-                <h2>El estudio</h2>
-                <p>Un pensamiento que conjuga luz, espacio y materia, en búsqueda del equilibrio expresivo-funcional. Soluciones de diseño adaptadas a las necesidades de cada cliente.</p>
-            </article>
-        </section>
-        
-        <section>
+        <section class="index-body" >
+            <img src="assets/img/portada.jpg" class="index-background">
+            
+            <div class="estudio-card">
+                <article>
+                    <h1 class="estudio-card__title">SIM Arquitectura</h1>
+                    <h2 class="estudio-card__subtitle">El estudio</h2>
+                    <p class="estudio-card__paragraph">Un pensamiento que conjuga luz, espacio y materia, en búsqueda del equilibrio expresivo-funcional. Soluciones de diseño adaptadas a las necesidades de cada cliente.</p>
+                </article>
+            </div>
+
             <section>
-                <img src="assets/img/sobre_ideas.svg">
-                <h4>Trabajamos sobre tus ideas</h4>
-            </section>
-            <section>
-                <img src="assets/img/documentacion_detallada.svg">
-                <h4>Documentacion detallada</h4>
-            </section>
-            <section>
-                <img src="assets/img/sobre_ideas.svg">
-                <h4>Construccion ecologica</h4>
+                <section>
+                    <img src="assets/img/sobre_ideas.svg">
+                    <h4>Trabajamos sobre tus ideas</h4>
+                </section>
+                <section>
+                    <img src="assets/img/documentacion_detallada.svg">
+                    <h4>Documentacion detallada</h4>
+                </section>
+                <section>
+                    <img src="assets/img/sobre_ideas.svg">
+                    <h4>Construccion ecologica</h4>
+                </section>
             </section>
         </section>
-    </article>
-        
+
         <footer>
             <h4>© SIM ARQUITECTURA</h4>
             <p>Seguinos en nuestras redes:</p>
@@ -69,5 +65,7 @@
                 <li><a href="https://www.linkedin.com">LinkedIn</a></li>
             </ul>
         </footer>
+
     </body>
-    </html>
+
+</html>
