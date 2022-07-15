@@ -172,11 +172,17 @@ body {
 }
 
 .obras-galery__column {
-    padding: 1rem;
     flex: 20%;
+    padding: 1rem;
 }
 
 .obras-galery__image {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.obras-galery__image:hover {
+    width: 100%;
+    transform: scale(1.03);
 }
