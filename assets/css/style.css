@@ -15,10 +15,6 @@ body {
     background-color: #D4F5F5;
 }
 
-img {
-    margin: 1rem;
-    width: 50rem;
-}
 
 .header {
     background-color: #D9E5E8;
@@ -168,4 +164,19 @@ img {
 
 .footer__copyright p {
     font-size: 1.5rem;
+}
+
+.obras-galery__row {
+    display: flex;
+    padding: 1rem;
+}
+
+.obras-galery__column {
+    padding: 1rem;
+    flex: 20%;
+}
+
+.obras-galery__image {
+    width: 100%;
+    margin-top: 1rem;
 }
