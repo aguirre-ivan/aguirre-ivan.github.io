@@ -132,3 +132,40 @@ img {
     font-size: 2rem;
     color: #D9E5E8;
 }
+
+.footer-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.social-button {
+    color: rgb(0, 0, 0);
+}
+
+.footer__social-icons {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.footer__social-icons i {
+    font-size: 4rem;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+
+.footer__social-icons i:hover {
+    color: rgba(27, 116, 116, 1);
+    transform: scale(1.05);
+}
+
+.footer__contact-title h4 {
+    font-size: 3rem;
+}
+
+.footer__copyright p {
+    font-size: 1.5rem;
+}
