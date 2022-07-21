@@ -1,22 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Noto+Sans&family=Open+Sans&family=Source+Sans+Pro:wght@600&display=swap');
 
 html {
     font-size: 62.5%;
 }
 
 * {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #D4F5F5;
+    background-color: #093031;
+}
+
+.content {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(42,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2382AFB3'/%3E%3Cstop offset='1' stop-color='%23FFF9ED'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='7' height='7' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='3.5' cy='3.5' r='3.5'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.06'/%3E%3C/svg%3E");
+    background-attachment: fixed;
 }
 
 .header {
-    background-color: #D9E5E8;
+    background-color: #177f85;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,6 +38,7 @@ body {
     height: 7rem;
     width: auto;
     transition: all 0.3s;
+    filter: invert(100%)
 }
 
 .header .logo img:hover {
@@ -48,15 +55,16 @@ body {
     transform: scale(1.05);
 }
 
+
 .header .navbar__list a {
     font-size: 3rem;
-    color: black;
+    color: white;
     text-decoration: none;
     transition: all 0.3s;
 }
 
 .header .navbar__list a:hover {
-    color: rgba(27, 116, 116, 1);
+    color: rgb(16, 34, 34);
 }
 
 .index-content {
@@ -128,6 +136,11 @@ body {
     color: #D9E5E8;
 }
 
+footer {
+    bottom: 0;
+    width: 100%;
+}
+
 .footer-container {
     text-align: center;
     display: flex;
@@ -137,7 +150,7 @@ body {
 }
 
 .social-button {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .footer__social-icons {
@@ -158,10 +171,12 @@ body {
 }
 
 .footer__contact-title h4 {
+    color: rgb(255, 255, 255);
     font-size: 3rem;
 }
 
 .footer__copyright p {
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
 }
 
@@ -229,8 +244,7 @@ body {
     width: 50%;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 3rem;
-    margin-top: 10rem;
-    margin-left: 3rem;
+    margin: 4rem 2rem 4rem;
     border-radius: 4rem;
     color: black;
 }
@@ -278,10 +292,19 @@ body {
 .servicio-card {
     display: flex;
     align-items: center;
+    border-top: inset 0.1rem #a5cfcc;
+}
+
+.servicio-card--black {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(42,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23277883'/%3E%3Cstop offset='1' stop-color='%23FFF9ED'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='7' height='7' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='3.5' cy='3.5' r='3.5'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.06'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    border-top: inset 0.1rem #a5cfcc;
 }
 
 .servicio-card__text {
     width: 50%;
+    padding: 2rem;
     margin: 2rem;
     font-size: 3rem;
 }
@@ -289,12 +312,12 @@ body {
 .servicio-card__text h4 {
     font-size: 6rem;
     margin-bottom: 4rem;
+
 }
 
 .servicio-card__text h6 {
     font-size: 4rem;
     font-style: italic;
-
 }
 
 .servicio-card__text p {
@@ -310,8 +333,10 @@ body {
     overflow: hidden;
     position: relative;
     margin: 2rem;
-    border-radius: 20px;
-    box-shadow: 5px 8px 12px black;
+    border-radius: 32px;
+    background: #b1b6c3;
+    box-shadow: 12px 12px 34px #5c5f65,
+        -12px -12px 34px #ffffff;
 }
 
 .servicio-card__img img {
