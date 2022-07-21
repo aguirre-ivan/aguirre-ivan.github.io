@@ -15,7 +15,6 @@ body {
     background-color: #D4F5F5;
 }
 
-
 .header {
     background-color: #D9E5E8;
     display: flex;
@@ -210,12 +209,12 @@ body {
 }
 
 .sobre-nosotros-card__description h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     padding-bottom: 3rem;
 }
 
 .sobre-nosotros-card__description p {
-    font-size: 3rem;
+    font-size: 2rem;
     padding-bottom: 2rem;
 }
 
@@ -270,4 +269,51 @@ body {
     margin: 1rem 0;
     border-radius: 2rem;
     padding: 1.5rem;
+}
+
+.section-services {
+    width: 100%;
+}
+
+.servicio-card {
+    display: flex;
+    align-items: center;
+}
+
+.servicio-card__text {
+    width: 50%;
+    margin: 2rem;
+    font-size: 3rem;
+}
+
+.servicio-card__text h4 {
+    font-size: 6rem;
+    margin-bottom: 4rem;
+}
+
+.servicio-card__text h6 {
+    font-size: 4rem;
+    font-style: italic;
+
+}
+
+.servicio-card__text p {
+    font-size: 3rem;
+}
+
+.servicio-card__text ul {
+    list-style: none;
+}
+
+.servicio-card__img {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    margin: 2rem;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+}
+
+.servicio-card__img img {
+    width: 100%;
 }
