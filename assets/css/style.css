@@ -26,16 +26,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 9rem;
-    padding: 1rem;
-}
-
-.header .logo {
-    cursor: pointer;
+    height: 7rem;
+    padding: 2rem;
 }
 
 .header .logo img {
-    height: 7rem;
+    height: 4rem;
     width: auto;
     transition: all 0.3s;
     filter: invert(100%)
@@ -55,9 +51,8 @@ body {
     transform: scale(1.05);
 }
 
-
 .header .navbar__list a {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: white;
     text-decoration: none;
     transition: all 0.3s;
