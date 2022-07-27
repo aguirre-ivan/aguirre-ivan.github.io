@@ -65,40 +65,39 @@ body {
 .index-content {
     position: relative;
     width: 100%;
-    margin: 0;
+    margin: auto;
 }
 
 .portade-image {
-    position: relative;
     width: 100%;
-    margin: 0;
+    height: 100%;
 }
 
 .estudio-card {
     position: absolute;
-    bottom: 40%;
-    margin-left: 10%;
-    margin-right: 55%;
+    top: 40%;
+    left: 10%;
+    width: 35%;
     background-color: rgba(212, 245, 245, 0.5);
     border: none;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .estudio-card__title {
-    font-size: 6rem;
-    padding: 1rem;
+    font-size: 5rem;
+    padding: 1.5rem;
     color: #050517;
 }
 
 .estudio-card__subtitle {
-    font-size: 4rem;
+    font-size: 3rem;
     font-style: italic;
-    padding: 1rem;
+    padding: 1rem 2rem 1rem;
     color: #050517;
 }
 
 .estudio-card__paragraph {
-    padding: 1rem;
+    padding: 1rem 2rem 1rem;
     font-size: 2rem;
     font-style: italic;
     color: #050517;
@@ -108,7 +107,6 @@ body {
     position: absolute;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.658);
-
     bottom: 0.5rem;
     display: flex;
     flex-direction: row;
