@@ -74,7 +74,7 @@ body {
     margin: auto;
 }
 
-.portade {
+.portada {
     position: relative;
     background-image: url(../img/index/portada.jpg);
     background-color: rgba(0, 0, 0, 0.5);
@@ -261,55 +261,51 @@ footer {
     padding-bottom: 3rem;
 }
 
-.sobre-nosotros__description {
+.basic-text {
     width: 100%;
-    flex: 50%;
-    margin-right: 1rem;
+    padding-top: 1rem;
+    font-size: 2.3rem;
 }
 
-.sobre-nosotros__title {
+.basic-text p {
+    padding: 0.5rem;
+}
+
+.basic-title {
     font-size: 4.5rem;
+}
+
+.sobre-nosotros .basic-title {
     padding-bottom: 3rem;
 }
 
-.sobre-nosotros__description p {
-    font-size: 2.3rem;
-    padding-bottom: 2rem;
-}
-
-.contact-section {
+.contact {
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
     justify-content: center;
+    flex-direction: column;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 4rem 0;
 }
 
 .contact-card {
-    width: 50%;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 3rem;
-    margin: 4rem 2rem 4rem;
-    border-radius: 4rem;
-    color: black;
-}
-
-.contact-card h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.contact-card p {
-    padding: 0.5rem;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.form_input {
+    display: flex;
     width: 100%;
-    background-color: whitesmoke;
-    color: black;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
+    color: white;
+    background: rgb(19, 2, 32);
+    background: linear-gradient(90deg, rgba(19, 2, 32, 1) 0%, rgba(8, 0, 14, 1) 100%);
     border-radius: 1rem;
+    padding: 2rem;
+}
+
+.contact-card__form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    padding-right: 8rem;
+    padding-top: 2rem;
 }
 
 .newsletter-checkbox {
@@ -318,8 +314,12 @@ footer {
     align-items: baseline;
 }
 
+.contact-card__ubication {
+    padding: 1rem;
+}
+
 .button {
-    background: rgb(27, 116, 116);
+    background: rgb(177, 108, 43);
     width: 100%;
     color: white;
     font-size: 2rem;
