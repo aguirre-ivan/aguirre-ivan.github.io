@@ -244,10 +244,9 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin: 0 auto;
     padding: 2rem;
-    max-width: 120rem;
 }
 
 .sobre-nosotros__image {
@@ -270,22 +269,30 @@ footer {
 
 .contact {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
     flex-direction: column;
-    max-width: 120rem;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
-    padding: 4rem 0;
+    padding: 2rem;
+    max-width: 120rem;
 }
 
 .contact-card {
     display: flex;
+    flex-direction: column;
     width: 100%;
+    padding: 1rem;
     color: white;
     background: rgb(19, 2, 32);
     background: linear-gradient(90deg, rgba(19, 2, 32, 1) 0%, rgba(8, 0, 14, 1) 100%);
     border-radius: 1rem;
     padding: 2rem;
+}
+
+.contact-card__ubication iframe {
+    width: 100%;
+    height: 20rem;
+    margin: 0 auto;
 }
 
 .contact-card__form form {
@@ -457,6 +464,12 @@ footer {
     .obras-galery__image {
         object-fit: cover;
     }
+
+    .contact-card__ubication iframe {
+        width: 100%;
+        height: 35rem;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -470,6 +483,19 @@ footer {
 
     .obras-galery__image-container:nth-child(27) {
         grid-column-start: span 1;
+    }
+
+    .contact-card {
+        flex-direction: row;
+        max-width: 120rem;
+    }
+
+    .contact-card__form {
+        width: 50%;
+    }
+
+    .contact-card__ubication {
+        width: 50%;
     }
 }
 
