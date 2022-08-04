@@ -329,34 +329,32 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    padding: 8rem 0;
+    padding: 0.5rem 0.5rem;
 }
 
 .servicio-card {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    height: 40rem;
+    flex-direction: column-reverse;
+    min-height: 40rem;
     width: 100%;
     overflow: hidden;
 }
 
-.servicio-card:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
 .servicio-card__img {
-    flex-basis: 50%;
+    flex: 50%;
     height: 100%;
     overflow: hidden;
     position: relative;
 }
 
 .servicio-card__img img {
+    height: 100%;
     width: 100%;
+    object-fit: cover;
     transition: 1s ease transform;
     opacity: 0.9;
 }
@@ -366,8 +364,8 @@ footer {
 }
 
 .servicio-card__text {
-    padding: 2rem 2rem 0rem 2rem;
-    flex-basis: 50%;
+    padding: 2rem;
+    flex: 50%;
     height: 100%;
     display: flex;
     align-items: flex-start;
@@ -378,25 +376,24 @@ footer {
 }
 
 .servicio-card__text h4 {
-    font-size: 4.5rem;
+    font-size: 2.6rem;
     font-weight: 500;
 }
 
 .servicio-card__text h6 {
     color: #CDBEAA;
     margin-top: 0.5rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 
 .servicio-card__text p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 0rem;
 }
 
 .servicio-card__text ul {
     padding: 0.5rem 1rem;
-    font-size: 1.5rem;
     list-style: none;
 }
 
@@ -465,6 +462,19 @@ footer {
         object-fit: cover;
     }
 
+    .servicio-card__text h4 {
+        font-size: 4.5rem;
+    }
+
+    .servicio-card__text h6 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .servicio-card__text p {
+        font-size: 1.5rem;
+    }
+
     .contact-card__ubication iframe {
         width: 100%;
         height: 35rem;
@@ -483,6 +493,20 @@ footer {
 
     .obras-galery__image-container:nth-child(27) {
         grid-column-start: span 1;
+    }
+
+    .servicio-cards-container {
+        padding: 4rem 0;
+    }
+
+    .servicio-card {
+        flex-direction: row;
+        max-width: 120rem;
+        height: 40rem;
+    }
+
+    .servicio-card:nth-child(even) {
+        flex-direction: row-reverse;
     }
 
     .contact-card {
