@@ -68,52 +68,73 @@
             </nav>
         </header>
 
-
         <section class="content">
+
             <section class="contact">
 
                 <div class="basic-title">
                     <h1>Contactate</h1>
                 </div>
 
-                <section class="contact-card">
-                    <article class="contact-card__form">
-                        <div class="basic-text">
-                            <p>Creemos que la comunicación directa con nuestro
-                                cliente es esencial en el proceso.</p>
-                            <p>Contactate con nosotros enviando un mensaje desde
-                                el formulario o llamanos al 0341-42345678.</p>
-                        </div>
+                <div class="basic-text">
+                    <p>Creemos que la comunicación directa con nuestro
+                        cliente es esencial en el proceso.</p>
+                    <p>Contactate con nosotros enviando un mensaje desde
+                        el formulario o llamanos al 0341-42345678.</p>
+                </div>
 
-                        <form method="post">
-                            <input class="form_input" type="text"
-                                name="name_lastname" placeholder="Nombre y
-                                apellido">
-                            <input class="form_input" type="email" name="email"
-                                placeholder="Correo electronico">
-                            <input class="form_input" type="tel" name="phone"
-                                placeholder="Telefono">
-                            <textarea class="form_input" type="textarea"
-                                name="message" placeholder="Ingrese su mensaje"></textarea>
-                            <div class="newsletter-checkbox">
-                                <input type="checkbox" name="accept_newsletter"
-                                    value="1">
-                                <div class="basic-text">
-                                    <p>Acepto adherirme al newsletter.</p>
-                                </div>
+                <section class="contact__card">
+                    <p class="h3">Dejanos tu consulta:</p>
+                    <form class="mt-4">
+                        <div class="row g-3">
+                            <div class="col">
+                                <input type="text" class="form-control"
+                                    placeholder="Nombre" aria-label="Nombre">
                             </div>
-                            <input class="button" type="submit" value="Enviar">
-                        </form>
-                    </article>
-
-                    <section class="contact-card__ubication">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.862097483532!2d-58.4322726!3d-34.586064!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe8a347bb55df550c!2sCoderhouse%20Argentina!5e0!3m2!1ses!2sar!4v1657175033984!5m2!1ses!2sar"
-                            width="600" height="450" style="border:0;"
-                            allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </section>
+                            <div class="col">
+                                <input type="text" class="form-control"
+                                    placeholder="Apellido"
+                                    aria-label="Apellido">
+                            </div>
+                        </div>
+                        <div class="mb-3 mt-4">
+                            <label for="email"
+                                class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control"
+                                id="email"
+                                placeholder="nombre@ejemplo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message"
+                                class="form-label">Ingrese su mensaje:</label>
+                            <textarea class="form-control"
+                                id="message" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input"
+                                id="check_newsletter">
+                            <label class="form-check-label"
+                                for="check_newsletter">Acepto
+                                adherirme al newsletter.</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
                 </section>
+
+                <div class="basic-text">
+                    <p>Tambien podés visitarnos en nuestro estudio ubicado en
+                        Palermo.</p>
+                    <p>Acercate de lunes a viernes de 9:00hs a 18:00hs.</p>
+                </div>
+
+                <section class="contact__ubication">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.862097483532!2d-58.4322726!3d-34.586064!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe8a347bb55df550c!2sCoderhouse%20Argentina!5e0!3m2!1ses!2sar!4v1657175033984!5m2!1ses!2sar"
+                        style="border:0;"
+                        allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+
             </section>
         </section>
 
