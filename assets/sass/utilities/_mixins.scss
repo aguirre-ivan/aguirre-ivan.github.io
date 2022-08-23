@@ -1,0 +1,13 @@
+$breakpoints: (
+    tablet: 768px,
+    small-desktop-hd: 1200px,
+    desktop-hd: 1366px,
+    desktop-fhd: 1920px,
+);
+
+// mixin mobile first
+@mixin media-up ($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}

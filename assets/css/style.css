@@ -325,7 +325,7 @@ footer {
   list-style: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .portada {
     height: 60rem;
   }
@@ -370,7 +370,7 @@ footer {
     height: 35rem;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer__copyright {
     font-size: 2rem;
   }
@@ -404,7 +404,7 @@ footer {
     max-width: 120rem;
   }
 }
-@media only screen and (min-width: 1366px) {
+@media screen and (min-width: 1366px) {
   .section-attributes-cards {
     grid-template-columns: repeat(4, auto);
   }
@@ -412,7 +412,7 @@ footer {
     width: 33rem;
   }
 }
-@media only screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
   .section-attributes-cards {
     padding-left: 9rem;
     padding-right: 9rem;

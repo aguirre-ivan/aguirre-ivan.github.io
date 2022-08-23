@@ -1,4 +1,6 @@
-@import "variables";
+@import "utilities/variables";
+@import "utilities/mixins";
+
 @import url("https://fonts.googleapis.com/css2?family=Hind&family=Montserrat&display=swap");
 
 html {
@@ -213,7 +215,6 @@ footer {
     grid-template-columns: 1fr;
     padding: 0.5rem;
 
-
     &__image {
         padding: 1rem;
         width: 100%;
@@ -357,7 +358,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 768px) {
+@include media-up("tablet") {
     .portada {
         height: 60rem;
     }
@@ -426,7 +427,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@include media-up("small-desktop-hd") {
     .footer {
         &__copyright {
             font-size: 2rem;
@@ -476,7 +477,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1366px) {
+@include media-up("desktop-hd") {
     .section-attributes-cards {
         grid-template-columns: repeat(4, auto);
     }
@@ -486,7 +487,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1920px) {
+@include media-up(desktop-fhd) {
     .section-attributes-cards {
         padding-left: 9rem;
         padding-right: 9rem;
