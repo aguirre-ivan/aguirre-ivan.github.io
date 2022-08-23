@@ -19,3 +19,9 @@ $breakpoints: (
     align-items: $align-items;
     justify-content: $justify;
 }
+
+// mixin grid rows
+@mixin display-grid-n-rows($rows) {
+    display: grid;
+    grid-template-rows: repeat($rows, auto);
+}

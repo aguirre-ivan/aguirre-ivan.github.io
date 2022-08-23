@@ -38,13 +38,11 @@ li {
 }
 
 .grid-layout-index {
-    display: grid;
-    grid-template-rows: repeat(4, auto);
+    @include display-grid-n-rows(4);
 }
 
 .grid-layout-pages {
-    display: grid;
-    grid-template-rows: repeat(3, auto);
+    @include display-grid-n-rows(3);
 }
 
 .content {
