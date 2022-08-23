@@ -83,11 +83,9 @@ header .nav-logo:hover {
   margin: auto;
   color: rgb(255, 255, 255);
 }
-
 .estudio-card__title {
   font-size: 4.5rem;
 }
-
 .estudio-card__paragraph {
   padding: 0.5rem;
   font-size: 2rem;
@@ -122,24 +120,20 @@ header .nav-logo:hover {
   transform: translateY(-1.5rem);
   box-shadow: 0 1.2rem 1.6rem rgba(0, 0, 0, 0.2);
 }
-
 .estudio-attributes-card__image {
   width: 33rem;
   height: 22rem;
 }
-
 .estudio-attributes-card__title {
   font-size: 2.5rem;
   color: rgb(0, 0, 0);
   padding: 1rem;
 }
-
 .estudio-attributes-card__paragraph {
   font-size: 1.5rem;
   margin: 0rem auto 1.5rem;
   color: rgb(0, 0, 0);
 }
-
 .estudio-attributes-card__link {
   font-size: 1.5rem;
   margin: auto;
@@ -162,26 +156,23 @@ footer {
   text-align: center;
   color: rgb(255, 255, 255);
 }
-
-.footer__copyright {
+.footer-content__copyright {
   font-size: 1.8rem;
 }
-
-.footer__contact {
+.footer-content__contact {
   font-size: 1.5rem;
 }
-
-.footer__social-icons {
+.footer-content__social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer__social-icons i {
+.footer-content__social-icons i {
   font-size: 2rem;
   padding: 2rem 0.7rem 2rem;
   transition: all 0.3s;
 }
-.footer__social-icons i:hover {
+.footer-content__social-icons i:hover {
   color: rgb(165, 106, 50);
   transform: scale(1.05);
 }
@@ -200,12 +191,11 @@ footer {
   color: rgb(73, 6, 59);
 }
 
-.obras-galery__container {
+.obras-galery {
   display: grid;
   grid-template-columns: 1fr;
   padding: 0.5rem;
 }
-
 .obras-galery__image {
   padding: 1rem;
   width: 100%;
@@ -225,7 +215,6 @@ footer {
   margin: 0 auto;
   padding: 2rem;
 }
-
 .sobre-nosotros__image {
   width: 100%;
   border-radius: 2rem;
@@ -253,7 +242,6 @@ footer {
   height: 100%;
   max-width: 120rem;
 }
-
 .contact__card {
   width: 100%;
   padding: 1rem;
@@ -263,7 +251,6 @@ footer {
   padding: 2rem;
   margin-bottom: 2rem;
 }
-
 .contact__ubication {
   padding: 1rem;
   width: 100%;
@@ -295,7 +282,6 @@ footer {
 .servicio-card:hover .servicio-card__img img {
   transform: scale(1.1);
 }
-
 .servicio-card__img {
   flex: 50%;
   height: 100%;
@@ -310,7 +296,6 @@ footer {
   transition: 1s ease transform;
   opacity: 0.9;
 }
-
 .servicio-card__text {
   padding: 2rem;
   flex: 50%;
@@ -355,7 +340,7 @@ footer {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
   }
-  .obras-galery__container {
+  .obras-galery {
     grid-template-columns: repeat(2, 1fr);
   }
   .obras-galery__image-container:nth-child(5) {
@@ -392,7 +377,7 @@ footer {
   .footer__contact {
     font-size: 1.5rem;
   }
-  .obras-galery__container {
+  .obras-galery {
     grid-template-columns: repeat(3, 1fr);
   }
   .obras-galery__image-container:nth-child(7) {
@@ -432,7 +417,7 @@ footer {
     padding-left: 9rem;
     padding-right: 9rem;
   }
-  .obras-galery__container {
+  .obras-galery {
     grid-template-columns: repeat(4, 1fr);
   }
   .obras-galery__image-container:nth-child(3) {
