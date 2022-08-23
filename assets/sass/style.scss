@@ -77,15 +77,13 @@ header {
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: center;
+
+    @include display-flex(row, center, flex-start);
 }
 
 .estudio-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include display-flex(column, center, center);
+
     margin: auto;
     color: $white;
 
@@ -162,10 +160,8 @@ footer {
 }
 
 .footer-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include display-flex(column, center, center);
+
     text-align: center;
     color: $white;
 
@@ -178,9 +174,7 @@ footer {
     }
 
     &__social-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include display-flex(row, center, center);
 
         i {
             font-size: 2rem;
@@ -229,10 +223,8 @@ footer {
 }
 
 .sobre-nosotros {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    @include display-flex(column, center, center);
+
     margin: 0 auto;
     padding: 2rem;
 
@@ -256,10 +248,8 @@ footer {
 }
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include display-flex(column, center, center);
+
     margin: 0 auto;
     padding: 2rem;
     height: 100%;
@@ -287,20 +277,16 @@ footer {
 }
 
 .servicio-cards-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include display-flex(column, center, center);
+
     width: 100%;
     margin: 0 auto;
     padding: 0.5rem 0.5rem;
 }
 
 .servicio-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse;
+    @include display-flex(column-reverse, center, center);
+
     min-height: 40rem;
     width: 100%;
     overflow: hidden;
@@ -328,11 +314,10 @@ footer {
         padding: 2rem;
         flex: 50%;
         height: 100%;
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
         background: $midnight-blue-gradient;
         color: $white;
+
+        @include display-flex(column, flex-start, flex-start);
 
         h4 {
             font-size: 2.6rem;

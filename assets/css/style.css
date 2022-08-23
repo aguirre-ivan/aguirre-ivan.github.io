@@ -72,14 +72,16 @@ header .nav-logo:hover {
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .estudio-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   margin: auto;
   color: rgb(255, 255, 255);
 }
@@ -151,8 +153,8 @@ footer {
 .footer-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
   color: rgb(255, 255, 255);
 }
@@ -164,8 +166,9 @@ footer {
 }
 .footer-content__social-icons {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 .footer-content__social-icons i {
   font-size: 2rem;
@@ -209,9 +212,9 @@ footer {
 
 .sobre-nosotros {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -262,9 +265,9 @@ footer {
 
 .servicio-cards-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   width: 100%;
   margin: 0 auto;
   padding: 0.5rem 0.5rem;
@@ -272,9 +275,9 @@ footer {
 
 .servicio-card {
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  flex-direction: column-reverse;
   min-height: 40rem;
   width: 100%;
   overflow: hidden;
@@ -300,11 +303,12 @@ footer {
   padding: 2rem;
   flex: 50%;
   height: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
   background: linear-gradient(90deg, rgb(19, 2, 32) 0%, rgb(8, 0, 14) 100%);
   color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .servicio-card__text h4 {
   font-size: 2.6rem;
