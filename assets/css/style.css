@@ -39,7 +39,7 @@ li {
   padding: 1rem 0.5rem;
 }
 
-.basic-title {
+.basic-title h1 {
   font-size: 3rem;
 }
 
@@ -411,6 +411,11 @@ footer {
   border-radius: 2rem;
 }
 
+@media only screen and (min-width: 1200px) {
+  .sobre-nosotros {
+    max-width: 120rem;
+  }
+}
 .contact {
   display: flex;
   flex-direction: column;
@@ -445,9 +450,6 @@ footer {
   }
 }
 @media only screen and (min-width: 1200px) {
-  .sobre-nosotros {
-    max-width: 120rem;
-  }
   .contact__card {
     max-width: 120rem;
   }

@@ -1,0 +1,17 @@
+.sobre-nosotros {
+    @include display-flex(column, center, center);
+
+    margin: 0 auto;
+    padding: 2rem;
+
+    &__image {
+        width: 100%;
+        border-radius: 2rem;
+    }
+}
+
+@include media-up("small-desktop-hd") {
+    .sobre-nosotros {
+        max-width: 120rem;
+    }
+}
