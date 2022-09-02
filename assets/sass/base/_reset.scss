@@ -29,3 +29,16 @@ a {
 li {
     list-style: none;
 }
+
+.basic-text {
+    width: 100%;
+    font-size: 2rem;
+
+    p {
+        padding: 1rem 0.5rem;
+    }
+}
+
+.basic-title {
+    font-size: 3rem;
+}

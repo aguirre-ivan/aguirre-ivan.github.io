@@ -31,6 +31,18 @@ li {
   list-style: none;
 }
 
+.basic-text {
+  width: 100%;
+  font-size: 2rem;
+}
+.basic-text p {
+  padding: 1rem 0.5rem;
+}
+
+.basic-title {
+  font-size: 3rem;
+}
+
 .grid-layout-index {
   display: grid;
   grid-template-rows: repeat(4, auto);
@@ -270,18 +282,6 @@ footer {
 .sobre-nosotros__image {
   width: 100%;
   border-radius: 2rem;
-}
-
-.basic-text {
-  width: 100%;
-  font-size: 2rem;
-}
-.basic-text p {
-  padding: 1rem 0.5rem;
-}
-
-.basic-title {
-  font-size: 3rem;
 }
 
 .contact {
