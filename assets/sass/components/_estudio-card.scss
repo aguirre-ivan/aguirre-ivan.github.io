@@ -1,0 +1,29 @@
+.estudio-card {
+    @include display-flex(column, center, center);
+
+    margin: auto;
+    color: $white;
+
+    &__title {
+        font-size: 4.5rem;
+    }
+
+    &__paragraph {
+        padding: 0.5rem;
+        font-size: 2rem;
+        font-style: italic;
+    }
+}
+
+@include media-up("tablet") {
+    .estudio-card {
+        &__title {
+            font-size: 6rem;
+        }
+
+        &__paragraph {
+            padding: 1rem;
+            font-size: 2.3rem;
+        }
+    }
+}
