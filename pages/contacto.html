@@ -71,72 +71,143 @@
 
         <section class="content">
 
+            <div class="basic-title">
+                <h1>Contactate</h1>
+            </div>
+
             <section class="contact">
-
-                <div class="basic-title">
-                    <h1>Contactate</h1>
-                </div>
-
                 <div class="basic-text">
-                    <p>Creemos que la comunicación directa con nuestro
-                        cliente es esencial en el proceso.</p>
-                    <p>Contactate con nosotros enviando un mensaje desde
-                        el formulario o llamanos al 0341-42345678.</p>
+                    <p>
+                        Creemos que la comunicación directa con nuestro
+                        cliente es esencial en el proceso. Para comenzar una
+                        entrevista, contactanos por cualquiera de los medios
+                        disponibles.
+                    </p>
+                    <p>
+                        Podés enviarnos un mensaje desde
+                        el siguiente formulario o llamanos al 0341-42345678.
+                        Al
+                        completarlo y enviarlo, responderemos a la brevedad
+                        a tu
+                        casilla de correo.
+                    </p>
                 </div>
 
-                <section class="contact__card">
-                    <p class="h3">Dejanos tu consulta:</p>
-                    <form class="mt-4">
-                        <div class="row g-3">
-                            <div class="col">
-                                <input type="text" class="form-control"
-                                    placeholder="Nombre" aria-label="Nombre">
+                <section class="contact-card">
+                    <form>
+                        <div class="contact-card__datos-personales">
+                            <div class="basic-title">
+                                <h2>
+                                    Datos personales
+                                </h2>
                             </div>
-                            <div class="col">
-                                <input type="text" class="form-control"
-                                    placeholder="Apellido"
-                                    aria-label="Apellido">
+                            <div class="mb-3">
+                                <label for="contactName"
+                                    class="form-label col-form-label-lg">
+                                    Nombre y apellido
+                                </label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control
+                                        form-control-lg" id="contactName">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactEmail"
+                                    class="form-label col-form-label-lg">
+                                    Correo electrónico
+                                </label>
+                                <input type="email" class="form-control
+                                    form-control-lg"
+                                    id="contactEmail"
+                                    placeholder="nombre@ejemplo.com">
+                                <div id="emailHelp" class="form-text">
+                                    No compartiremos tu correo con nadie.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactNumber"
+                                    class="form-label col-form-label-lg">
+                                    Teléfono
+                                </label>
+                                <div class="input-group mb-3">
+                                    <input type="number" class="form-control
+                                        form-control-lg" id="contactNumber">
+                                </div>
                             </div>
                         </div>
-                        <div class="mb-3 mt-4">
-                            <label for="email"
-                                class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control"
-                                id="email"
-                                placeholder="nombre@ejemplo.com">
+
+                        <div class="contact-card__consulta">
+                            <div class="basic-title">
+                                <h2>
+                                    Consulta
+                                </h2>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactAsunto"
+                                    class="form-label col-form-label-lg">
+                                    Asunto
+                                </label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control
+                                        form-control-lg" id="contactAsunto">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactMessage"
+                                    class="form-label col-form-label-lg">
+                                    Ingresá tu mensaje
+                                </label>
+                                <textarea class="form-control
+                                    form-control-lg"
+                                    id="contactMessage" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="flexCheckChecked" checked>
+                                    <label class="form-check-label"
+                                        for="flexCheckChecked">
+                                        Acepto recibir nueva información
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3 text-md-end">
+                                <button type="button" class="btn btn-dark
+                                    btn-lg">
+                                    Enviar
+                                </button>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="message"
-                                class="form-label">Ingrese su mensaje:</label>
-                            <textarea class="form-control"
-                                id="message" rows="3"></textarea>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input"
-                                id="check_newsletter">
-                            <label class="form-check-label"
-                                for="check_newsletter">Acepto
-                                adherirme al newsletter.</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
                 </section>
 
-                <div class="basic-text">
-                    <p>Tambien podés visitarnos en nuestro estudio ubicado en
-                        Palermo.</p>
-                    <p>Acercate de lunes a viernes de 9:00hs a 18:00hs.</p>
-                </div>
-
-                <section class="contact__ubication">
+                <section class="contact-ubication">
+                    <div class="basic-text">
+                        <p>
+                            Tambien podés visitarnos en nuestro estudio ubicado
+                            en Palermo.
+                        </p>
+                        <p>Contamos con arquitectos experimentados
+                            y capacitados para el total asesoramiento.
+                        </p>
+                        <p>
+                            Acercate de lunes a viernes de 9:00hs a 18:00hs a
+                            nuestra sede:
+                        </p>
+                        <p>
+                            El Salvador 5218, CABA.
+                        </p>
+                    </div>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.862097483532!2d-58.4322726!3d-34.586064!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe8a347bb55df550c!2sCoderhouse%20Argentina!5e0!3m2!1ses!2sar!4v1657175033984!5m2!1ses!2sar"
                         style="border:0;"
                         allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </section>
-
             </section>
+
         </section>
 
         <footer>
@@ -154,7 +225,8 @@
                     <a href="https://instagram.com" class="social-button">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="https://www.linkedin.com" class="social-button">
+                    <a href="https://www.linkedin.com"
+                        class="social-button">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                     <a href="https://www.twitter.com" class="social-button">
@@ -173,6 +245,5 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
-
     </body>
 </html>
