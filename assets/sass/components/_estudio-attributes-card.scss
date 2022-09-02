@@ -1,0 +1,51 @@
+.estudio-attributes-card-container {
+    padding: 1rem 0;
+}
+
+.estudio-attributes-card {
+    width: 33rem;
+    height: 47rem;
+    border-radius: 0.8rem;
+    box-shadow: 0rem 0.2rem 0.2rem $black-shadow;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    background-color: $linen;
+    transition: all 0.25s;
+
+    &:hover {
+        transform: translateY(-1.5rem);
+        box-shadow: 0 1.2rem 1.6rem $black-shadow;
+    }
+
+    &__image {
+        width: 33rem;
+        height: 22rem;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        color: $black;
+        padding: 1rem;
+    }
+
+    &__paragraph {
+        font-size: 1.5rem;
+        margin: 0rem auto 1.5rem;
+        color: $black;
+    }
+
+    &__link {
+        font-size: 1.5rem;
+        margin: auto;
+        padding-top: 1rem;
+        text-decoration: underline;
+        color: $brown;
+    }
+}
+
+@include media-up("desktop-hd") {
+    .estudio-attributes-card {
+        width: 33rem;
+    }
+}

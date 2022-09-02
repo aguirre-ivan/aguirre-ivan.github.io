@@ -1,0 +1,44 @@
+.section-profiles {
+    @include display-flex(column, center, center);
+}
+
+.profiles-container {
+    @include display-flex(column, center, center);
+    margin-bottom: 2rem;
+}
+
+.profile-container {
+    padding: 2rem;
+}
+
+.profile-card {
+    margin-top: 20px;
+
+    .card-img-block {
+        width: 91%;
+        margin: 0 auto;
+        position: relative;
+        top: -20px;
+    }
+
+    .card-img-block img {
+        border-radius: 5px;
+        box-shadow: 0 0 10px $black-semi-transparent;
+    }
+
+    h5 {
+        color: #4E5E30;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+@include media-up("tablet") {
+    .profiles-container {
+        @include display-flex(row, center, center);
+    }
+}

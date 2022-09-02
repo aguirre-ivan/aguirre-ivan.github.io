@@ -1,0 +1,7 @@
+.grid-layout-index {
+    @include display-grid-n-rows(4);
+}
+
+.grid-layout-pages {
+    @include display-grid-n-rows(3);
+}

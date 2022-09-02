@@ -1,0 +1,28 @@
+.sobre-nosotros {
+    @include display-flex(column, center, center);
+    margin: 0 auto;
+    padding: 2rem;
+
+    &__image {
+        width: 100%;
+        overflow: hidden;
+
+        img {
+            height: 50rem;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+    }
+}
+
+@include media-up("small-desktop-hd") {
+    .sobre-nosotros {
+        @include display-flex(row-reverse, center, center);
+        max-width: 120rem;
+
+        &__image {
+            padding: 2rem;
+        }
+    }
+}

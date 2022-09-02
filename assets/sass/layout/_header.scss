@@ -1,0 +1,15 @@
+header {
+    background-color: $midnight-blue;
+    padding: 1rem;
+
+    .nav-logo {
+        height: 4rem;
+        width: auto;
+        transition: all 0.3s;
+        filter: invert(100%);
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

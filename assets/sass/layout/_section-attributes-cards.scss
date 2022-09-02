@@ -1,0 +1,27 @@
+.section-attributes-cards {
+    width: 100%;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-rows: auto;
+    @include svg-background();
+}
+
+@include media-up("tablet") {
+    .section-attributes-cards {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+}
+
+@include media-up("desktop-hd") {
+    .section-attributes-cards {
+        grid-template-columns: repeat(4, auto);
+    }
+}
+
+@include media-up("desktop-fhd") {
+    .section-attributes-cards {
+        padding-left: 9rem;
+        padding-right: 9rem;
+    }
+}
