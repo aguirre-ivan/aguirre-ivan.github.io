@@ -6,36 +6,15 @@
 
 @import "layout/grid";
 @import "layout/header";
+@import "layout/cover";
+@import "layout/content";
 @import "layout/footer";
 @import "layout/obras-galery";
+@import "layout/section-attributes-cards";
 
 @import "components/estudio-card";
 @import "components/estudio-attributes-card";
 @import "components/servicio-card";
-
-.content {
-    @include svg-background();
-    height: auto;
-}
-
-.portada {
-    height: 50rem;
-    background-image: url(../img/index/portada.jpg);
-    background-color: $black-semi-transparent;
-    background-blend-mode: darken;
-    background-size: cover;
-    background-position: center;
-
-    @include display-flex(row, center, flex-start);
-}
-
-.section-attributes-cards {
-    width: 100%;
-    padding: 2rem 0;
-    display: grid;
-    grid-template-rows: auto;
-    @include svg-background();
-}
 
 .sobre-nosotros {
     @include display-flex(column, center, center);
@@ -78,24 +57,7 @@
     }
 }
 
-.servicio-cards-container {
-    @include display-flex(column, center, center);
-
-    width: 100%;
-    margin: 0 auto;
-    padding: 0.5rem 0.5rem;
-}
-
 @include media-up("tablet") {
-    .portada {
-        height: 60rem;
-    }
-
-    .section-attributes-cards {
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(2, auto);
-    }
-
     .contact {
         &__ubication {
             iframe {
@@ -106,10 +68,6 @@
 }
 
 @include media-up("small-desktop-hd") {
-    .servicio-cards-container {
-        padding: 4rem 0;
-    }
-
     .sobre-nosotros {
         max-width: 120rem;
     }
@@ -118,18 +76,5 @@
         &__card {
             max-width: 120rem;
         }
-    }
-}
-
-@include media-up("desktop-hd") {
-    .section-attributes-cards {
-        grid-template-columns: repeat(4, auto);
-    }
-}
-
-@include media-up(desktop-fhd) {
-    .section-attributes-cards {
-        padding-left: 9rem;
-        padding-right: 9rem;
     }
 }

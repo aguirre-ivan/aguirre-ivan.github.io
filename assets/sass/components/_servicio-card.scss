@@ -1,3 +1,11 @@
+.servicio-cards-container {
+    @include display-flex(column, center, center);
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem 0.5rem;
+}
+
 .servicio-card {
     @include display-flex(column-reverse, center, center);
 
@@ -77,6 +85,10 @@
 }
 
 @include media-up("small-desktop-hd") {
+    .servicio-cards-container {
+        padding: 4rem 0;
+    }
+
     .servicio-card {
         flex-direction: row;
         max-width: 120rem;
