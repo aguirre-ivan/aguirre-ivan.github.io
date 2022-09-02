@@ -4,33 +4,13 @@
 @import "utilities/variables";
 @import "utilities/mixins";
 
-.grid-layout-index {
-    @include display-grid-n-rows(4);
-}
-
-.grid-layout-pages {
-    @include display-grid-n-rows(3);
-}
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
 
 .content {
     @include svg-background();
     height: auto;
-}
-
-header {
-    background-color: $midnight-blue;
-    padding: 1rem;
-
-    .nav-logo {
-        height: 4rem;
-        width: auto;
-        transition: all 0.3s;
-        filter: invert(100%);
-
-        &:hover {
-            transform: scale(1.05);
-        }
-    }
 }
 
 .portada {
@@ -112,57 +92,6 @@ header {
         padding-top: 1rem;
         text-decoration: underline;
         color: $brown;
-    }
-}
-
-footer {
-    background-color: $midnight-blue;
-    padding-top: 2rem;
-    color: $white;
-}
-
-.footer-content {
-    @include display-flex(column, center, center);
-
-    text-align: center;
-    color: $white;
-
-    &__copyright {
-        font-size: 1.8rem;
-    }
-
-    &__contact {
-        font-size: 1.5rem;
-    }
-
-    &__social-icons {
-        @include display-flex(row, center, center);
-
-        i {
-            font-size: 2rem;
-            padding: 2rem 0.7rem 2rem;
-            transition: all 0.3s;
-
-            &:hover {
-                color: $brown;
-                transform: scale(1.05);
-            }
-        }
-    }
-}
-
-.social-button {
-    color: $white;
-}
-
-.footer-bottom {
-    text-align: center;
-    background-color: $black;
-    font-size: 1.5rem;
-    padding: 2rem 0;
-
-    a {
-        color: $purple;
     }
 }
 
@@ -375,16 +304,6 @@ footer {
 }
 
 @include media-up("small-desktop-hd") {
-    .footer {
-        &__copyright {
-            font-size: 2rem;
-        }
-
-        &__contact {
-            font-size: 1.5rem;
-        }
-    }
-
     .obras-galery {
         grid-template-columns: repeat(3, 1fr);
 
