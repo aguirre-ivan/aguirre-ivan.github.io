@@ -9,7 +9,8 @@
 
 .contact-card {
     background: $linen;
-    width: 60rem;
+    width: 100%;
+    max-width: 60rem;
     border-radius: 1rem;
     margin: 2rem 0rem 0rem;
     padding: 2rem;
@@ -38,6 +39,7 @@
 @include media-up("desktop-hd") {
     .contact-card {
         width: 90%;
+        max-width: 110rem;
 
         form {
             @include display-flex(row, left, space-around);
