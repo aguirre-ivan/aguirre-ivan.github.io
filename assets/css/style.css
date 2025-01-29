@@ -174,7 +174,7 @@ footer {
 }
 .obras-galery__image:hover {
   width: 100%;
-  transform: scale(1.03);
+  transform: scale(1.01);
 }
 
 @media only screen and (min-width: 768px) {
