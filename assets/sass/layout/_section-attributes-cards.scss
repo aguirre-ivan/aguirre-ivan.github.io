@@ -1,26 +1,27 @@
 .section-attributes-cards {
     display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
     justify-content: center;
-    margin: auto;
-    max-width: 90%;
+    flex-wrap: wrap;
+    gap: 15px;
     padding: 50px 20px;
+    margin: auto;
     @include svg-background();
 }
 
 @include media-up("tablet") {
     .section-attributes-cards {
-
+        max-width: 75%;
     }
 }
 
 @include media-up("desktop-hd") {
     .section-attributes-cards {
+        max-width: 70%;
     }
 }
 
 @include media-up("desktop-fhd") {
     .section-attributes-cards {
+        max-width: unset;
     }
 }

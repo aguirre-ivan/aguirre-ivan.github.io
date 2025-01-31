@@ -7,9 +7,10 @@
     background-color: $linen;
     transition: all 0.25s;
     padding: 2rem;
+    justify-self: center;
 
     &:hover {
-        transform: translateY(-1.5rem);
+        transform: translateY(-1rem);
         box-shadow: 0 1.2rem 1.6rem $black-shadow;
     }
 
