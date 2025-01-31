@@ -455,10 +455,11 @@ footer {
 }
 .profile-card h5 {
   color: #4E5E30;
-  font-weight: 600;
+  font-weight: bold;
+  font-size: 2rem;
 }
 .profile-card p {
-  font-size: 14px;
+  font-size: 1.6rem;
   font-weight: 300;
 }
 
