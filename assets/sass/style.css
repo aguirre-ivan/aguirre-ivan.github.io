@@ -4,7 +4,7 @@ html {
 }
 
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Sora", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -259,11 +259,10 @@ footer {
 }
 .estudio-attributes-card {
   width: 33rem;
-  height: 47rem;
+  height: auto;
   border-radius: 0.8rem;
   box-shadow: 0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  text-align: center;
   background-color: rgba(243, 236, 227, 0.5215686275);
   transition: all 0.25s;
   padding: 2rem;
@@ -275,6 +274,7 @@ footer {
 .estudio-attributes-card__image {
   overflow: hidden;
   border-radius: 0.8rem;
+  margin-bottom: 1.5rem;
 }
 .estudio-attributes-card__image img {
   width: 100%;
@@ -282,14 +282,21 @@ footer {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.estudio-attributes-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
 .estudio-attributes-card__title {
   font-size: 2.5rem;
   color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin: 0;
 }
 .estudio-attributes-card__paragraph {
-  font-size: 1.5rem;
-  margin: 0rem 1rem 1rem;
-  color: rgb(0, 0, 0);
+  font-size: 1.6rem;
+  color: rgb(42, 39, 39);
+  margin: 0;
 }
 .estudio-attributes-card__link {
   font-size: 1.5rem;
