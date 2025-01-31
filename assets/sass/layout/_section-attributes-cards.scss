@@ -1,27 +1,26 @@
 .section-attributes-cards {
-    width: 100%;
-    padding: 2rem 0;
-    display: grid;
-    grid-template-rows: auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    max-width: 90%;
+    padding: 50px 20px;
     @include svg-background();
 }
 
 @include media-up("tablet") {
     .section-attributes-cards {
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(2, auto);
+
     }
 }
 
 @include media-up("desktop-hd") {
     .section-attributes-cards {
-        grid-template-columns: repeat(4, auto);
     }
 }
 
 @include media-up("desktop-fhd") {
     .section-attributes-cards {
-        padding-left: 9rem;
-        padding-right: 9rem;
     }
 }
