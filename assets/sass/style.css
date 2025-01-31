@@ -80,7 +80,7 @@ header .nav-logo:hover {
 .cover {
   height: 50rem;
   background-image: url(../img/index/portada.jpg);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: darken;
   background-size: cover;
   background-position: center;
@@ -255,11 +255,15 @@ footer {
 }
 .estudio-card__title {
   font-size: 4.5rem;
+  font-weight: bold;
 }
 .estudio-card__paragraph {
   padding: 0.5rem;
   font-size: 2rem;
   font-style: italic;
+  font-weight: bold;
+  width: 80%;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -447,7 +451,7 @@ footer {
 }
 .profile-card .card-img-block img {
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 .profile-card h5 {
   color: #4E5E30;
