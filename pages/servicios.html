@@ -2,31 +2,31 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv='X-UA-Compatible'
-        content='IE=edge'>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
     <title>SIM Arquitectura | Servicios</title>
     <link rel="icon"
-        href="../assets/img/favicon.png">
-    <meta name='keywords'
-        content='arquitectura,diseño,seguimiento,direccion,obra,construccion,calidad'>
-    <meta name='description'
-        content='Nuestros servicios ofrecen pura calidad y nuestro
-            seguimiento en la obra, diseño y construcción es continuo.'>
-    <meta name='author'
-        content='Aguirre Ivan Gonzalo'>
+        href="../assets/img/favicon.png" />
+    <meta name="keywords"
+        content="arquitectura,diseño,seguimiento,direccion,obra,construccion,calidad" />
+    <meta name="description"
+        content="Nuestros servicios ofrecen pura calidad y nuestro
+            seguimiento en la obra, diseño y construcción es continuo." />
+    <meta name="author"
+        content="Aguirre Ivan Gonzalo" />
     <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+        content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/0fd078418e.js"
         crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-        crossorigin="anonymous">
-    <link rel='stylesheet'
-        type='text/css'
-        media='screen'
-        href='../assets/css/style.css'>
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        type="text/css"
+        media="screen"
+        href="../assets/sass/style.css" />
 </head>
 
 <body class="grid-layout-pages">
@@ -38,7 +38,7 @@
                     <img src="../assets/img/logo.png"
                         alt="Logo de SIM
                             Arquitectura"
-                        class="nav-logo">
+                        class="nav-logo" />
                 </a>
                 <button class="navbar-toggler"
                     type="button"
@@ -49,11 +49,9 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse
-                        justify-content-end"
+                <div class="collapse navbar-collapse justify-content-end"
                     id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0
-                            ">
+                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                         <li class="nav-item fs-2 p-2">
                             <a class="nav-link"
                                 href="../index.html">INICIO</a>
@@ -68,8 +66,7 @@
                         </li>
                         <li class="nav-item fs-2 p-2">
                             <a class="nav-link"
-                                href="sobre_nosotros.html">SOBRE
-                                NOSOTROS</a>
+                                href="sobre_nosotros.html">SOBRE NOSOTROS</a>
                         </li>
                         <li class="nav-item fs-2 p-2">
                             <a class="nav-link"
@@ -82,165 +79,367 @@
     </header>
 
     <section class="content">
-
-        <div class="servicio-cards-container">
-            <section class="servicio-card"
+        <div class="servicio-cards-container container">
+            <div class="servicio-card"
                 id="diseño-arquitectonico">
                 <div class="servicio-card__img">
                     <img src="../assets/img/servicios/diseno_arquitectonico.jpg"
-                        alt="Planos y herramientas de arquitectura">
+                        alt="Planos y herramientas de arquitectura" />
                 </div>
-                <section class="servicio-card__text">
+                <div class="servicio-card__text">
                     <h4>Diseño arquitectónico</h4>
-                    <ul>
-                        <li>
-                            <h6>Cuantificacion</h6>
-                            <p>
-                                Cada modificación del modelo se ve reflejada
-                                en la cuantificación, asegurando la
-                                exactitud en todas las instancias de la
-                                obra.
-                            </p>
+                    <p class="servicio-card__summary">
+                        Modificamos el modelo basandonos en la cuantificación y comunicación durante toda la etapa del
+                        proyecto. Realizamos un seguimiento con asesores expertos, permitiendo ver el avance de forma
+                        online en tiempo real.
+                    </p>
+                    <ul class="nav nav-pills mb-3"
+                        id="pills-tab"
+                        role="tablist">
+                        <li class="nav-item"
+                            role="presentation">
+                            <button class="nav-link active"
+                                id="cuantificacion-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#cuantificacion"
+                                type="button"
+                                role="tab"
+                                aria-controls="cuantificacion"
+                                aria-selected="true">
+                                Cuantificacion
+                            </button>
                         </li>
-                        <li>
-                            <h6>Comunicacion</h6>
-                            <p>
-                                Habrá un canal de comunicación en general y
-                                publicaciones durante toda la etapa de
-                                proyecto, lo cual permitirá ver la
-                                documentación y el avance de los trabajos
-                                online y en tiempo real.
-                            </p>
+                        <li class="nav-item"
+                            role="presentation">
+                            <button class="nav-link"
+                                id="comunicacion-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#comunicacion"
+                                type="button"
+                                role="tab"
+                                aria-controls="comunicacion"
+                                aria-selected="false">
+                                Comunicacion
+                            </button>
                         </li>
-                        <li>
-                            <h6>Renders</h6>
-                            <p>
-                                Generamos imágenes hiperrealistas del
-                                exterior, sobre el proyecto finalizado, para
-                                tener una visualización anticipada del obra.
-                            </p>
+                        <li class="nav-item"
+                            role="presentation">
+                            <button class="nav-link"
+                                id="renders-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#renders"
+                                type="button"
+                                role="tab"
+                                aria-controls="renders"
+                                aria-selected="false">
+                                Renders
+                            </button>
                         </li>
                     </ul>
-                </section>
-            </section>
+                    <div class="tab-content"
+                        id="pills-tabContent">
+                        <div class="tab-pane fade show active"
+                            id="cuantificacion"
+                            role="tabpanel"
+                            aria-labelledby="cuantificacion-tab"
+                            tabindex="0">
+                            Cada modificación del modelo se ve reflejada en
+                            la cuantificación, asegurando la exactitud en
+                            todas las instancias de la obra.
+                        </div>
+                        <div class="tab-pane fade"
+                            id="comunicacion"
+                            role="tabpanel"
+                            aria-labelledby="comunicacion-tab"
+                            tabindex="0">
+                            Habrá un canal de comunicación en general y
+                            publicaciones durante toda la etapa de proyecto,
+                            lo cual permitirá ver la documentación y el
+                            avance de los trabajos online y en tiempo real.
+                        </div>
+                        <div class="tab-pane fade"
+                            id="renders"
+                            role="tabpanel"
+                            aria-labelledby="renders-tab"
+                            tabindex="0">
+                            Generamos imágenes hiperrealistas del exterior,
+                            sobre el proyecto finalizado, para tener una
+                            visualización anticipada del obra.
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <section class="servicio-card"
-                id="direccion-obra">
+            <div class="servicio-card"
+                id="direccion-de-obra">
                 <div class="servicio-card__img">
                     <img src="../assets/img/servicios/direccion_obra.jpg"
-                        alt="Arquitecto hablando con clientes">
+                        alt="Planos y herramientas de arquitectura" />
                 </div>
-                <section class="servicio-card__text">
+                <div class="servicio-card__text">
                     <h4>Direccion de obra</h4>
-                    <ul>
-                        <li>
-                            <h6>Certificacion</h6>
-                            <p>
-                                Con una configuración previa, al seleccionar
-                                los avances en el modelo, se arrojan todas
-                                las mediciones necesarias para certificar,
-                                ahorrando significativamente los tiempos,
-                                para dicha tarea.
-                            </p>
+                    <p class="servicio-card__summary">
+                        Reducimos costos de la construcción y uso de materiales. Se pueden obtener y personalizar, todas
+                        las mediciones que la constructora requiera para dicha optimización, obtenidas del modelo
+                        tridimensional.
+                    </p>
+                    <ul class="nav nav-pills mb-3"
+                        id="pills-tab"
+                        role="tablist">
+                        <li class="nav-item"
+                            role="presentation">
+                            <button class="nav-link active"
+                                id="certificacion-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#certificacion"
+                                type="button"
+                                role="tab"
+                                aria-controls="certificacion"
+                                aria-selected="true">
+                                Certificacion
+                            </button>
                         </li>
-                        <li>
-                            <h6>Calidad</h6>
-                            <p>
-                                Personalizar los que necesite la
-                                constructora
-                                para mejorar su servicio y mitigar riesgos o
-                                vicios ocultos.
-                            </p>
+                        <li class="nav-item"
+                            role="presentation">
+                            <button class="nav-link"
+                                id="calidad-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#calidad"
+                                type="button"
+                                role="tab"
+                                aria-controls="calidad"
+                                aria-selected="false">
+                                Calidad
+                            </button>
                         </li>
-                        <li>
-                            <h6>Modelos 4D</h6>
-                            <p>
-                                Proporciona a la construcción herramientas
-                                que le permiten optimizar la planificación,
-                                la gestión del proyecto y la ejecución de
-                                obra.
-                            </p>
+                        <li class="nav-item"
+                            role="presentation">
+                            <button class="nav-link"
+                                id="modelos4D-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#modelos4D"
+                                type="button"
+                                role="tab"
+                                aria-controls="modelos4D"
+                                aria-selected="false">
+                                Modelos 4D
+                            </button>
                         </li>
                     </ul>
-                </section>
-            </section>
+                    <div class="tab-content"
+                        id="pills-tabContent">
+                        <div class="tab-pane fade show active"
+                            id="certificacion"
+                            role="tabpanel"
+                            aria-labelledby="certificacion-tab"
+                            tabindex="0">
+                            Con una configuración previa, al seleccionar los
+                            avances en el modelo, se arrojan todas las
+                            mediciones necesarias para certificar, ahorrando
+                            significativamente los tiempos, para dicha
+                            tarea.
+                        </div>
+                        <div class="tab-pane fade"
+                            id="calidad"
+                            role="tabpanel"
+                            aria-labelledby="calidad-tab"
+                            tabindex="0">
+                            Personalizar los que necesite la constructora
+                            para mejorar su servicio y mitigar riesgos o
+                            vicios ocultos.
+                        </div>
+                        <div class="tab-pane fade"
+                            id="modelos4D"
+                            role="tabpanel"
+                            aria-labelledby="modelos4D-tab"
+                            tabindex="0">
+                            Proporciona a la construcción herramientas
+                            que le permiten optimizar la planificación,
+                            la gestión del proyecto y la ejecución de
+                            obra.
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <section class="servicio-card"
+            <div class="servicio-card"
                 id="construccion">
                 <div class="servicio-card__img">
                     <img src="../assets/img/servicios/construccion.jpg"
-                        alt="Arquitecto en la obra">
+                        alt="Planos y herramientas de arquitectura" />
                 </div>
-                <section class="servicio-card__text">
+                <div class="servicio-card__text">
                     <h4>Construccion</h4>
-                    <ul>
-                        <li>
-                            <h6>Presupuestos</h6>
-                            <p>
-                                Vinculación de los modelos tridimensionales
-                                con los atomizados de cómputo y presupuesto,
-                                haciendo así más efectivas y precisas las
-                                compras de materiales.
-                            </p>
+                    <p class="servicio-card__summary">
+                        Construimos con altos standard de calidad, con grupos especializados para cada rubro,
+                        optimizando procesos y recursos. Certificaciones gráficas y cuantificaciones de control
+                        resultantes del único modelo tridimensional y 4D.
+                    </p>
+                    <ul class="nav nav-pills mb-3"
+                        id="pills-tab"
+                        role="tablist">
+                        <li class="nav-item"
+                            role="presentation">
+                            <button class="nav-link active"
+                                id="presupuestos-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#presupuestos"
+                                type="button"
+                                role="tab"
+                                aria-controls="presupuestos"
+                                aria-selected="true">
+                                Presupuestos
+                            </button>
                         </li>
-                        <li>
-                            <h6>Compras</h6>
-                            <p>
-                                Evitamos retrasos por falta de material y
-                                sobrantes por compras desmedidas.
-                            </p>
+                        <li class="nav-item"
+                            role="presentation">
+                            <button class="nav-link"
+                                id="compras-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#compras"
+                                type="button"
+                                role="tab"
+                                aria-controls="compras"
+                                aria-selected="false">
+                                Compras
+                            </button>
                         </li>
-                        <li>
-                            <h6>Mantenimiento</h6>
-                            <p>
-                                Modelo tridimensional conforme a obra, con
-                                toda la información cargada a lo largo del
-                                proceso constructivo.
-                            </p>
+                        <li class="nav-item"
+                            role="presentation">
+                            <button class="nav-link"
+                                id="mantenimiento-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#mantenimiento"
+                                type="button"
+                                role="tab"
+                                aria-controls="mantenimiento"
+                                aria-selected="false">
+                                Mantenimiento
+                            </button>
                         </li>
                     </ul>
-                </section>
-            </section>
+                    <div class="tab-content"
+                        id="pills-tabContent">
+                        <div class="tab-pane fade show active"
+                            id="presupuestos"
+                            role="tabpanel"
+                            aria-labelledby="presupuestos-tab"
+                            tabindex="0">
+                            Vinculación de los modelos tridimensionales
+                            con los atomizados de cómputo y presupuesto,
+                            haciendo así más efectivas y precisas las
+                            compras de materiales.
+                        </div>
+                        <div class="tab-pane fade"
+                            id="compras"
+                            role="tabpanel"
+                            aria-labelledby="compras-tab"
+                            tabindex="0">
+                            Evitamos retrasos por falta de material y sobrantes por compras desmedidas.
+                        </div>
+                        <div class="tab-pane fade"
+                            id="mantenimiento"
+                            role="tabpanel"
+                            aria-labelledby="mantenimiento-tab"
+                            tabindex="0">
+                            Modelo tridimensional conforme a obra, con
+                            toda la información cargada a lo largo del
+                            proceso constructivo.
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <section class="servicio-card"
-                id="diseño-interiores">
+            <div class="servicio-card"
+                id="diseño-de-interiores">
                 <div class="servicio-card__img">
                     <img src="../assets/img/servicios/diseno_interiores.jpg"
-                        alt="Diseño de interior de una casa">
+                        alt="Planos y herramientas de arquitectura" />
                 </div>
-                <section class="servicio-card__text">
+                <div class="servicio-card__text">
                     <h4>Diseño de interiores</h4>
-                    <ul>
-                        <li>
-                            <h6>Entrevista introductoria</h6>
-                            <p>
-                                Definimos las necesidades y los requisitos
-                                personalizados de cada ambiente del
-                                proyecto, a través de moodboards y tours en
-                                360 para visualizarlas en realidad virtual.
-                            </p>
+                    <p class="servicio-card__summary">
+                        Modelo tridimensional conforme a obra, con toda la información cargada a lo largo del proceso
+                        constructivo, tanto paramétricos, como manuales y modelos de todos los artefactos colocados. Ya
+                        sea iluminación y muebles.
+                    </p>
+                    <ul class="nav nav-pills mb-3"
+                        id="pills-tab"
+                        role="tablist">
+                        <li class="nav-item"
+                            role="presentation">
+                            <button class="nav-link active"
+                                id="entrevista-introductoria-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#entrevista-introductoria"
+                                type="button"
+                                role="tab"
+                                aria-controls="entrevista-introductoria"
+                                aria-selected="true">
+                                Entrevista introductoria
+                            </button>
                         </li>
-                        <li>
-                            <h6>Requisitos</h6>
-                            <p>
-                                Evaluamos requisitos hasta el último
-                                detalle en la selección de paletas de
-                                colores, mobiliarios, telas, texturas, etc.
-                            </p>
+                        <li class="nav-item"
+                            role="presentation">
+                            <button class="nav-link"
+                                id="requisitos-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#requisitos"
+                                type="button"
+                                role="tab"
+                                aria-controls="requisitos"
+                                aria-selected="false">
+                                Requisitos
+                            </button>
                         </li>
-                        <li>
-                            <h6>Calidad en interiorismo</h6>
-                            <p>
-                                Diseñamos y personalizamos cada uno de los
-                                muebles, obteniendo asi una línea única y
-                                exclusiva de mobiliario.
-                            </p>
+                        <li class="nav-item"
+                            role="presentation">
+                            <button class="nav-link"
+                                id="calidad-en-interiorismo-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#calidad-en-interiorismo"
+                                type="button"
+                                role="tab"
+                                aria-controls="calidad-en-interiorismo"
+                                aria-selected="false">
+                                Calidad en interiorismo
+                            </button>
                         </li>
                     </ul>
-                </section>
-            </section>
+                    <div class="tab-content"
+                        id="pills-tabContent">
+                        <div class="tab-pane fade show active"
+                            id="entrevista-introductoria"
+                            role="tabpanel"
+                            aria-labelledby="entrevista-introductoria-tab"
+                            tabindex="0">
+                            Definimos las necesidades y los requisitos
+                            personalizados de cada ambiente del
+                            proyecto, a través de moodboards y tours en
+                            360 para visualizarlas en realidad virtual.
+                        </div>
+                        <div class="tab-pane fade"
+                            id="requisitos"
+                            role="tabpanel"
+                            aria-labelledby="requisitos-tab"
+                            tabindex="0">
+                            Evaluamos requisitos hasta el último detalle
+                            en la selección de paletas de colores,
+                            mobiliarios, telas, texturas, etc.
+                        </div>
+                        <div class="tab-pane fade"
+                            id="calidad-en-interiorismo"
+                            role="tabpanel"
+                            aria-labelledby="calidad-en-interiorismo-tab"
+                            tabindex="0">
+                            Diseñamos y personalizamos cada uno de los
+                            muebles, obteniendo asi una línea única y
+                            exclusiva de mobiliario.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </section>
 
     <footer>
@@ -280,17 +479,30 @@
         </div>
 
         <div class="footer-bottom">
-            <p>Creado por <a href="https://github.com/aguirre-ivan"
+            <div class="footer-bottom__text">Creado por <a href="https://github.com/aguirre-ivan"
                     target="_blank"
                     rel="noopener noreferrer">Iván
-                    Aguirre</a></p>
+                    Aguirre</a></div>
+            <div class="footer-bottom__contact">
+                <a href="https://www.linkedin.com/in/aguirre-ivan/"
+                    class="social-button"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/aguirre-ivan"
+                    class="social-button"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

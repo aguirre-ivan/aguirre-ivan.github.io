@@ -6,12 +6,16 @@
 
     &__title {
         font-size: 4.5rem;
+        font-weight: bold;
     }
 
     &__paragraph {
         padding: 0.5rem;
         font-size: 2rem;
         font-style: italic;
+        font-weight: bold;
+        width: 80%;
+        text-align: center;
     }
 }
 

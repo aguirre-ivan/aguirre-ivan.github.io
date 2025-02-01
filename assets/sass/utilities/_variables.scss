@@ -2,7 +2,7 @@
 
 $white: rgb(255, 255, 255);
 $black: rgb(0, 0, 0);
-$black-semi-transparent: rgba(0, 0, 0, 0.5);
+$black-semi-transparent: rgba(0, 0, 0, 0.7);
 $black-shadow: rgba(0, 0, 0, 0.2);
 $brown: rgb(165, 106, 50);
 $light-brown: #cdbeaa;
@@ -12,3 +12,6 @@ $midnight-blue: rgb(8, 0, 14);
 $midnight-blue-gradient: linear-gradient(90deg,
         rgba(19, 2, 32, 1) 0%,
         rgba(8, 0, 14, 1) 100%);
+$pill-bg-color: rgb(130, 92, 158);
+$pill-active-color: rgb(249 247 251);
+$pill-active-bg-color: rgb(171, 151, 186);
