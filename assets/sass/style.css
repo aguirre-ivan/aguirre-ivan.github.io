@@ -103,7 +103,6 @@ header .nav-logo:hover {
 
 footer {
   background-color: rgb(8, 0, 14);
-  padding-top: 2rem;
   color: rgb(255, 255, 255);
 }
 
@@ -112,6 +111,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
   text-align: center;
   color: rgb(255, 255, 255);
 }
@@ -126,6 +126,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 
 .social-button {
@@ -133,7 +134,6 @@ footer {
 }
 .social-button i {
   font-size: 2rem;
-  padding: 2rem 0.7rem 2rem;
   transition: all 0.3s;
 }
 .social-button i:hover {
@@ -150,7 +150,7 @@ footer {
   text-align: center;
   background-color: rgb(0, 0, 0);
   font-size: 1.5rem;
-  padding: 2rem 0;
+  padding: 2rem;
 }
 .footer-bottom a {
   color: rgb(73, 6, 59);
@@ -164,7 +164,6 @@ footer {
 }
 .footer-bottom__contact .social-button i {
   color: rgb(73, 6, 59);
-  padding: 0;
 }
 .footer-bottom__contact .social-button i:hover {
   color: rgb(255, 255, 255);

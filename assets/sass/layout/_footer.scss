@@ -1,12 +1,11 @@
 footer {
     background-color: $midnight-blue;
-    padding-top: 2rem;
     color: $white;
 }
 
 .footer-content {
     @include display-flex(column, center, center);
-
+    padding: 2rem;
     text-align: center;
     color: $white;
 
@@ -20,6 +19,7 @@ footer {
 
     &__social-icons {
         @include display-flex(row, center, center);
+        gap: 1rem;
     }
 }
 
@@ -28,7 +28,6 @@ footer {
 
     i {
         font-size: 2rem;
-        padding: 2rem 0.7rem 2rem;
         transition: all 0.3s;
 
         &:hover {
@@ -44,7 +43,7 @@ footer {
     text-align: center;
     background-color: $black;
     font-size: 1.5rem;
-    padding: 2rem 0;
+    padding: 2rem;
 
     a {
         color: $purple;
@@ -57,7 +56,6 @@ footer {
         .social-button {
             i {
                 color: $purple;
-                padding: 0;
 
                 &:hover {
                     color: $white;
