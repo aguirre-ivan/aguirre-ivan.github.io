@@ -1,3 +1,31 @@
+.estudio-attributes-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 50px 20px;
+    margin: auto;
+
+}
+
+@include media-up("tablet") {
+    .estudio-attributes-cards-container {
+        max-width: 75%;
+    }
+}
+
+@include media-up("desktop-hd") {
+    .estudio-attributes-cards-container {
+        max-width: 70%;
+    }
+}
+
+@include media-up("desktop-fhd") {
+    .estudio-attributes-cards-container {
+        max-width: unset;
+    }
+}
+
 .estudio-attributes-card {
     width: 33rem;
     height: auto;
