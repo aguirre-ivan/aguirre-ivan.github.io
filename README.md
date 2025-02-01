@@ -16,3 +16,4 @@ This project was built using the following technologies and tools:
 - **Bootstrap 5**: For responsive design and layout.
 - **JavaScript**: For interactivity and custom functionality.
 - **Fancybox**: To create elegant modals for images.
+- **FontAwesome**: To include scalable vector icons and social media icons.
