@@ -1,20 +1,23 @@
 .servicio-cards-container {
     @include display-flex(column, center, center);
-
     width: 100%;
+    gap: 2rem;
     margin: 0 auto;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 3rem;
 }
 
 .servicio-card {
     @include display-flex(column-reverse, center, center);
-
-    min-height: 40rem;
+    height: 40rem;
     width: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
     overflow: hidden;
+    background: $white;
+    box-shadow: 0rem 0.2rem 0.2rem $black-shadow;
 
     &:hover &__img img {
-        transform: scale(1.1);
+        transform: scale(1.02);
     }
 
     &__img {
@@ -22,6 +25,7 @@
         height: 100%;
         overflow: hidden;
         position: relative;
+        border-radius: 1rem;
 
         img {
             height: 100%;
@@ -36,31 +40,36 @@
         padding: 2rem;
         flex: 50%;
         height: 100%;
-        background: $midnight-blue-gradient;
-        color: $white;
 
         @include display-flex(column, flex-start, flex-start);
 
         h4 {
             font-size: 2.6rem;
-            font-weight: 500;
+            font-weight: bold;
         }
 
-        h6 {
-            color: $light-brown;
-            margin-top: 0.5rem;
+        .nav-pills {
+            gap: 1rem;
+            flex-wrap: wrap;
+
+            .nav-item .nav-link {
+                border-radius: 2rem;
+                font-weight: bold;
+                font-size: 1.4rem;
+                background: $pill-bg-color;
+                color: $white;
+
+                &.active,
+                &:hover {
+                    color: $pill-active-color;
+                    background: $pill-active-bg-color;
+                }
+            }
+        }
+
+        .tab-pane {
             font-size: 2rem;
-            font-weight: 500;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-top: 0rem;
-        }
-
-        ul {
-            padding: 0.5rem 1rem;
-            list-style: none;
+            color: rgb(42, 39, 39);
         }
     }
 }
